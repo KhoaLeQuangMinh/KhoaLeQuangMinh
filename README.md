@@ -2,7 +2,7 @@
 
 **Researcher in Surgical AI & Medical Computer Vision**  
 Computer Science Engineering &middot; Vietnamese-German University &amp; Frankfurt University of Applied Sciences (Double Degree, Grade: 1.2/1.0, GPA 3.8/4.0)  
-[Curriculum Vitae (PDF)](https://drive.google.com/file/d/1KXJ-4CIbiRFFUKGfoSnFpJNG_xE9CUK0/view?usp=drive_link) &middot; [LinkedIn](https://linkedin.com/in/quangminhkhoale) &middot; [Email](mailto:lequangminhkhoa@gmail.com)
+[Profile](https://drive.google.com/file/d/1KXJ-4CIbiRFFUKGfoSnFpJNG_xE9CUK0/view?usp=drive_link) &middot; [LinkedIn](https://linkedin.com/in/quangminhkhoale) &middot; [Email](mailto:lequangminhkhoa@gmail.com)
 
 ---
 
