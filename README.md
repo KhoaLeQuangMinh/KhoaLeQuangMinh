@@ -1,8 +1,7 @@
 # Quang Minh Khoa Le
 
 **Undergraduate researcher in Surgical AI & Medical Computer Vision**  
-Computer Science Engineering &middot; Vietnamese-German University &times; Frankfurt University of Applied Sciences \
-(Double Degree, 2023 &ndash; 2027) \
+Computer Science Engineering &middot; Vietnamese-German University &times; Frankfurt University of Applied Sciences (2023 &ndash; 2027) \
 Grade 1.2/1.0 (equiv. GPA 3.8/4.0)  \
 [CV](https://drive.google.com/file/d/1KXJ-4CIbiRFFUKGfoSnFpJNG_xE9CUK0/view?usp=drive_link) &middot; [LinkedIn](https://linkedin.com/in/quangminhkhoale) &middot; [Email](mailto:lequangminhkhoa@gmail.com)
 
