@@ -8,7 +8,7 @@ Computer Science Engineering &middot; Vietnamese-German University &times; Frank
 
 ### About
 
-I work on deep learning for medical imaging. At the **VGU AI Lab** my focus is **Surgical AI**: liver landmark segmentation in laparoscopic video and landmark-free 3D&ndash;2D registration for laparoscopic liver surgery. At the **AI in Medical Applications Lab (AIMA)** I work on Alzheimer's disease progression modelling from MRI and PET.
+Hello, I am an undergraduate researcher working on AI in Medical. Currently, I am researching about Surgical AI; specifically, I am working on AR guided for Laparoscopic Surgery. 
 
 I have no peer-reviewed publications yet. Results below come from my own experiments, competition leaderboards, or unpublished technical reports, and are labelled as such.
 
@@ -33,7 +33,7 @@ I have no peer-reviewed publications yet. Results below come from my own experim
     Multi-head 3D ResNet-18 that predicts SuStaIn subtype and stage from a single T1 MRI; exploratory experiments on separating progression velocity from severity using cross-sectional data.
 
 * **Small Multimodal Models for Tropical Disease Diagnosis** &mdash; [repo](https://github.com/KhoaLeQuangMinh/Small-Multimodal-Models-for-Clinical-Diagnosis) *(Sep &ndash; Oct 2026)*  
-  Supervised by Dr. Tran Duc Khanh (VGU). Team project, co-developed with Phan Thanh Hung. My parts: the LightRAG knowledge-graph retrieval benchmarks and, jointly, the four-stage "dual-brain" pipeline (disease-guide knowledge graph, patient-case memory retrieval, hub-suppression ranking, constrained chain-of-thought with Qwen2.5-3B). Team result: 48.2% top-1 / 72.3% top-3 accuracy on a 365-case test set, vs. 7.7% top-1 for the zero-shot base model.
+  Supervised by Dr. Tran Duc Khanh (VGU). Developed the LightRAG knowledge-graph retrieval benchmarks and, jointly, the four-stage "dual-brain" pipeline (disease-guide knowledge graph, patient-case memory retrieval, hub-suppression ranking, constrained chain-of-thought with Qwen2.5-3B). Team result: 48.2% top-1 / 72.3% top-3 accuracy on a 365-case test set, vs. 7.7% top-1 for the zero-shot base model.
 
 ---
 
