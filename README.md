@@ -11,8 +11,6 @@ Grade 1.2/1.0 (equiv. GPA 3.8/4.0)  \
 
 Hello, I am an undergraduate researcher working on AI in Medical. Currently, I am researching about Surgical AI; specifically, I am working on AR guided for Laparoscopic Surgery. 
 
-I have no peer-reviewed publications yet. Results below come from my own experiments, competition leaderboards, or unpublished technical reports, and are labelled as such.
-
 ---
 
 ### Research
