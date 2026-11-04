@@ -22,7 +22,7 @@ Hello, I am an undergraduate researcher working on AI in Medical. Currently, I a
     Best model (pose-stratified temporal Mask2Former): 71.9% macro Dice, 15.4 px ASSD on the official test split, vs. 69.6% macro Dice for the best published method (BCRNet, as reported in its paper; not yet re-run under the same protocol). Written up as an unpublished technical report.
   * **l3d-bench: a fair re-evaluation** &mdash; [l3d-bench](https://github.com/KhoaLeQuangMinh/l3d-bench) *(Nov 2026, in progress)*  
     Retraining published methods (TopoNet, BCRNet, A2ONet, D2GPLand) under one split protocol and one metric, so comparisons with my models are like-for-like.
-  * **Landmark-free 3D&ndash;2D registration** *(Oct 2026 &ndash; Present, private repo)*  
+  * **Landmark-free 3D&ndash;2D registration** &mdash; [registration-coding](https://github.com/KhoaLeQuangMinh/registration-coding) *(Oct 2026 &ndash; Present)*  
     Aligning preoperative 3D liver models with laparoscopic frames (P2I-LReg). Current stage: dataset exploration, 3D geometry, preprocessing.
 
 * **AI in Medical Applications Lab (AIMA) &mdash; Researcher** *(2025 &ndash; Present)*
