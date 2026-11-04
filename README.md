@@ -49,7 +49,7 @@ I have no peer-reviewed publications yet. Results below come from my own experim
 | **13th place** (score 0.876) | AI Vietnam Warm-up: Skin Lesion Segmentation &mdash; [repo](https://github.com/KhoaLeQuangMinh/Skin_Lesion_Segmentation) | Hair-removal preprocessing, CLAHE, hybrid Focal-Tversky / BCE / surface loss |
 | Top 72 (Round 1) | Viettel AI Race &mdash; Novel View Synthesis &mdash; [repo](https://github.com/KhoaLeQuangMinh/self-cali-gs-viettel) | Pose refinement (Self-Cali-GS) + 2D Gaussian Splatting pipeline |
 | 150th &rarr; 80th &rarr; 50th (Rounds 1&ndash;3), team of 5 | HCMC AI Challenge 2026, video retrieval &mdash; [team repo](https://github.com/AIVIETNAM-AIO-Dewey/AIC-2026) | Built the Vietnamese speech-to-text (PhoWhisper) pipeline and region captioning (DAM) for the offline indexing stage |
-| Team member | AABW 2026 Track 2, Tasco Maps POI search &mdash; [team repo](https://github.com/XuanSang2005/Agentic-AI) | Minor contributor (retrieval and constraint fixes) |
+| Team member | AABW 2026 Track 2, Tasco Maps POI search &mdash; [team repo](https://github.com/XuanSang2005/Agentic-AI) | Main Researcher and Developer of the Algorithm |
 
 ---
 
