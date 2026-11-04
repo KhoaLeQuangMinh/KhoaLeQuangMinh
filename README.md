@@ -1,95 +1,68 @@
 # Quang Minh Khoa Le
 
-**Researcher in Surgical AI & Medical Computer Vision**  
-Computer Science Engineering &middot; Vietnamese-German University &amp; Frankfurt University of Applied Sciences (Double Degree, Grade: 1.2/1.0, GPA 3.8/4.0)  
-[Profile](https://drive.google.com/file/d/1KXJ-4CIbiRFFUKGfoSnFpJNG_xE9CUK0/view?usp=drive_link) &middot; [LinkedIn](https://linkedin.com/in/quangminhkhoale) &middot; [Email](mailto:lequangminhkhoa@gmail.com)
+**Undergraduate researcher in Surgical AI & Medical Computer Vision**  
+Computer Science Engineering &middot; Vietnamese-German University &times; Frankfurt University of Applied Sciences (Double Degree, 2023 &ndash; 2027) &middot; Grade 1.2 (German scale, 1.0 = best)  
+[CV](https://drive.google.com/file/d/1KXJ-4CIbiRFFUKGfoSnFpJNG_xE9CUK0/view?usp=drive_link) &middot; [LinkedIn](https://linkedin.com/in/quangminhkhoale) &middot; [Email](mailto:lequangminhkhoa@gmail.com)
 
 ---
 
-### Research Overview
+### About
 
-My research focuses on applying deep learning to computational medicine. Previously at the **AI in Medical Applications Lab (AIMA)**, I investigated neurodegenerative disease progression in Alzheimer's disease using multimodal MRI and PET fusion and ordinal representation learning.
+I work on deep learning for medical imaging. At the **VGU AI Lab** my focus is **Surgical AI**: liver landmark segmentation in laparoscopic video and landmark-free 3D&ndash;2D registration for laparoscopic liver surgery. At the **AI in Medical Applications Lab (AIMA)** I work on Alzheimer's disease progression modelling from MRI and PET.
 
-My current work at the **VGU AI Lab** centers on **Surgical AI**: developing topologically-aware landmark detection architectures and intraoperative 3D-to-2D image registration to assist minimally invasive laparoscopic liver procedures, alongside compact multimodal systems for clinical diagnosis in resource-constrained settings.
-
----
-
-### Research Experience & Lab Affiliations
-
-* **VGU AI Lab &mdash; Researcher** *(2025 &ndash; Present)*  
-  *Topic: Intraoperative Laparoscopic Surgical AI &amp; Landmark Detection*
-  * Authored research paper on geometric disparity and temporal modeling in laparoscopic landmark segmentation, setting state-of-the-art results on the L3D benchmark.
-  * Applied transformer-based segmenters (Mask2Former) and topological graph loss constraints to prevent boundary drift across surgical video frames.
-  * Investigated 3D-to-2D registration pipelines aligning preoperative CT models with real-time laparoscopic visual streams.
-
-* **AI in Medical Applications Lab (AIMA) &mdash; Researcher** *(2025 &ndash; Present)*  
-  *Topic: Neurodegenerative Disease Progression Modeling &amp; Volumetric Segmentation*
-  * Investigated Alzheimer's disease progression with paired MRI and PET scans, implementing modified triplet loss objectives to disentangle disease velocity from baseline severity.
-  * Replicated and extended the HOPE (Hybrid-granularity Ordinal Prototype lEarning) baseline for mild cognitive impairment classification.
-  * Awarded 1st Place in the AIO Liver CT Segmentation Challenge (Score: 0.972) and 13th Place in the AI Vietnam Dermoscopic Skin Lesion Segmentation Challenge (Score: 0.876).
+I have no peer-reviewed publications yet. Results below come from my own experiments, competition leaderboards, or unpublished technical reports, and are labelled as such.
 
 ---
 
-### Selected Projects & Research Timeline
+### Research
 
-#### I. Surgical AI & Medical Computer Vision (2025 &ndash; 2026)
+* **VGU AI Lab &mdash; Researcher** *(2025 &ndash; Present)*
+  * **Liver landmark segmentation on L3D** &mdash; [surgical_ai](https://github.com/KhoaTryToCode/surgical_ai) *(Aug &ndash; Oct 2026)*  
+    16 controlled experiments: TopoNet replication, Mask2Former baselines, B&eacute;zier curve heads, junction-based query steering, temporal prototype attention.  
+    Found a pose shift between splits (extreme-traction frames: 15.6% of validation vs. 8.0% of training) and moved to pose-stratified, patient-disjoint 5-fold splits.  
+    Best model (pose-stratified temporal Mask2Former): 71.9% macro Dice, 15.4 px ASSD on the official test split. Written up as an unpublished technical report.
+  * **l3d-bench: a fair re-evaluation** &mdash; [l3d-bench](https://github.com/KhoaLeQuangMinh/l3d-bench) *(Nov 2026, in progress)*  
+    Retraining published methods (TopoNet, BCRNet, A2ONet, D2GPLand) under one split protocol and one metric, so comparisons with my models are like-for-like.
+  * **Landmark-free 3D&ndash;2D registration** *(Oct 2026 &ndash; Present, private repo)*  
+    Aligning preoperative 3D liver models with laparoscopic frames (P2I-LReg). Current stage: dataset exploration, 3D geometry, preprocessing.
 
-* **[Intraoperative Laparoscopic-to-Preoperative Image Registration](https://github.com/KhoaLeQuangMinh/registration-coding)** *(Oct 2026)*  
-  *Stack: Python, 3D Point Cloud Processing, P2I-LReg Benchmark*  
-  Algorithmic registration framework aligning preoperative 3D CT/MRI liver reconstructions with real-time laparoscopic video streams.
+* **AI in Medical Applications Lab (AIMA) &mdash; Researcher** *(2025 &ndash; Present)*
+  * **MRI + PET Alzheimer's classification** &mdash; [coding_space](https://github.com/KhoaLeQuangMinh/coding_space) *(May &ndash; Jul 2026)*  
+    MRI-only, PET-only and fusion baselines on paired ADNI scans; replication of HOPE (ordinal prototype learning) for MCI progression; experiments with modified (ordinal) triplet losses.
+  * **SuStaIn-guided progression prediction** &mdash; [ebm_guide_ordinal](https://github.com/KhoaLeQuangMinh/ebm_guide_ordinal) *(Jul &ndash; Aug 2026)*  
+    Multi-head 3D ResNet-18 that predicts SuStaIn subtype and stage from a single T1 MRI; exploratory experiments on separating progression velocity from severity using cross-sectional data.
 
-* **[Clinical Multimodal Diagnostics for Tropical Diseases](https://github.com/KhoaLeQuangMinh/Small-Multimodal-Models-for-Clinical-Diagnosis)** *(Sep 2026 &ndash; Oct 2026)*  
-  *Stack: Small Multimodal Models, LightRAG, Knowledge Graphs, PyTorch*  
-  Supervised by Dr. Tran Duc Khanh (VGU). Unifies compact vision-language models with structured medical knowledge graphs for verifiable tropical disease reasoning.
-
-* **[Laparoscopic Landmark Segmentation &amp; Temporal Modeling](https://github.com/KhoaTryToCode/surgical_ai)** *(Aug 2026 &ndash; Oct 2026)*  
-  *Stack: PyTorch, Surgical Robotics, Temporal Modeling, LaTeX Paper*  
-  Official repository for research paper *"Diagnosing Geometric Disparity and Temporal Modeling in Laparoscopic Liver Landmark Segmentation"*. Sets state-of-the-art accuracy on the L3D benchmark.
-
-* **[Multimodal MRI+PET Alzheimer's Progression &amp; HOPE Baseline](https://github.com/KhoaLeQuangMinh/coding_space)** *(May 2026 &ndash; Jul 2026)*  
-  *Stack: PyTorch, NiBabel, MRI + PET Multimodal Fusion, Ordinal Learning*  
-  Evaluated paired MRI and PET scans, replicating and extending the HOPE baseline for cognitive impairment progression modeling at AIMA Lab.
-
-* **[3D Volumetric Liver &amp; Tumor CT Segmentation](https://github.com/KhoaLeQuangMinh/3D_Liver_Segmentation)** *(Nov 2025 &ndash; Dec 2025)*  
-  *Stack: PyTorch, 3D CT Imaging, Volumetric Slicing &middot; **1st Place (Score: 0.972)** in AIO 2025 LiverSeg Challenge*  
-  Automated hepatic lesion boundary extraction under extreme foreground-background imbalance and low soft-tissue contrast.
-
-* **[Dermoscopic Skin Lesion Segmentation](https://github.com/KhoaLeQuangMinh/Skin_Lesion_Segmentation)** *(Nov 2025)*  
-  *Stack: PyTorch, Semantic Segmentation, Dermoscopy &middot; **13th Place (Score: 0.876)** in AI Vietnam Challenge*  
-  Boundary extraction for melanoma diagnosis across heterogeneous skin tone and lighting conditions.
+* **Small Multimodal Models for Tropical Disease Diagnosis** &mdash; [repo](https://github.com/KhoaLeQuangMinh/Small-Multimodal-Models-for-Clinical-Diagnosis) *(Sep &ndash; Oct 2026)*  
+  Supervised by Dr. Tran Duc Khanh (VGU). Team project, co-developed with Phan Thanh Hung. My parts: the LightRAG knowledge-graph retrieval benchmarks and, jointly, the four-stage "dual-brain" pipeline (disease-guide knowledge graph, patient-case memory retrieval, hub-suppression ranking, constrained chain-of-thought with Qwen2.5-3B). Team result: 48.2% top-1 / 72.3% top-3 accuracy on a 365-case test set, vs. 7.7% top-1 for the zero-shot base model.
 
 ---
 
-#### II. Distributed Systems, Search &amp; Information Retrieval (2024 &ndash; 2026)
+### Competitions
 
-* **[MultiRetrieval: Multimodal Video Retrieval Platform](https://github.com/AIVIETNAM-AIO-Dewey/AIC-2026)** *(Aug 2026 &ndash; Sep 2026)*  
-  *Stack: FastAPI, Qdrant Vector DB, SigLIP2, Dense Keyframing, React*  
-  Multimodal search platform for HCMC AI Challenge, supporting Known-Item Search (KIS) and Question-Answering over video corpora.
-
-* **[SmartCart: Distributed Recommendation with LLM Explanations](https://github.com/KhoaLeQuangMinh/LLM-Recommender)** *(Aug 2026)*  
-  *Stack: PySpark (ALS), Google Gemini API, Flask REST API*  
-  Two-stage recommendation engine pairing distributed collaborative filtering with natural language explanation synthesis.
-
-* **[Tasco Maps: Deterministic POI Search &amp; Multi-Signal Ranking](https://github.com/XuanSang2005/Agentic-AI)** *(Jul 2026)*  
-  *Stack: Python, BM25, Dense Retrieval, Explainable Re-Ranking &middot; **Hit@1: 0.833, MRR: 0.890** (AABW 2026)*  
-  Deterministic search-and-ranking engine for Vietnamese points of interest operating with zero LLM inference latency.
-
-* **[Charity Ledger Distributed Consensus Monorepo](https://github.com/Marcher-D/charity-ledger-monorepo)** *(May 2026 &ndash; Jun 2026)*  
-  *Stack: Java, Distributed Consensus, Proof-of-Stake Protocol*  
-  Decentralized ledger architecture implementing deterministic state validation and cryptographic auditing.
-
-* **[Real-Time Urban Traffic Simulation](https://github.com/KiwisCodes/traffic-simulator)** *(Nov 2025 &ndash; Dec 2025)*  
-  *Stack: Java, JavaFX, SUMO Simulator, TraaS API*  
-  Object-oriented simulation platform wrapping TraaS API for real-time microscopic traffic flow analysis.
-
-* **[Fitness Activity Tracker](https://github.com/hunggiadao/track-me-run-fitness)** *(May 2024 &ndash; Jul 2024)*  
-  *Stack: Python, Backend Data Pipeline, REST API*  
-  Multidisciplinary collaborative project for mobile exercise telemetry and duration/biometric logging.
+| Result | Competition | What I did |
+|:---|:---|:---|
+| **1st place** (Dice 0.972) | AIO 2025 Liver Tumor Segmentation (Kaggle) &mdash; [repo](https://github.com/KhoaLeQuangMinh/3D_Liver_Segmentation) | 2D UNet++ cascade ensemble + 3D largest-connected-component post-processing |
+| **13th place** (score 0.876) | AI Vietnam Warm-up: Skin Lesion Segmentation &mdash; [repo](https://github.com/KhoaLeQuangMinh/Skin_Lesion_Segmentation) | Hair-removal preprocessing, CLAHE, hybrid Focal-Tversky / BCE / surface loss |
+| Top 72 (Round 1) | Viettel AI Race &mdash; Novel View Synthesis &mdash; [repo](https://github.com/KhoaLeQuangMinh/self-cali-gs-viettel) | Pose refinement (Self-Cali-GS) + 2D Gaussian Splatting pipeline |
+| 150th &rarr; 80th &rarr; 50th (Rounds 1&ndash;3), team of 5 | HCMC AI Challenge 2026, video retrieval &mdash; [team repo](https://github.com/AIVIETNAM-AIO-Dewey/AIC-2026) | Built the Vietnamese speech-to-text (PhoWhisper) pipeline and region captioning (DAM) for the offline indexing stage |
+| Team member | AABW 2026 Track 2, Tasco Maps POI search &mdash; [team repo](https://github.com/XuanSang2005/Agentic-AI) | Minor contributor (retrieval and constraint fixes) |
 
 ---
 
-### Technical Proficiencies
+### Other projects
 
-* **Computer Vision &amp; Medical AI**: PyTorch, Mask2Former, U-Net, NiBabel, FreeSurfer, ANTs, Volumetric CT/MRI, 3D Point Cloud Registration, Temporal Video Modeling.
-* **Multimodal &amp; NLP Systems**: Small Multimodal Models (SMMs), Knowledge Graph RAG (LightRAG), SigLIP2, Dense Embeddings, BM25, Qdrant Vector Database, PySpark (ALS).
-* **Languages &amp; Software Tools**: Python, Java (OOP, JavaFX), R, SQL, Git, Linux, Docker, FastAPI, Flask, LaTeX.
+* **[SmartCart LLM Recommender](https://github.com/KhoaLeQuangMinh/LLM-Recommender)** *(Aug 2026, solo)*: PySpark ALS candidate retrieval, re-ranking, Gemini-generated explanations, Flask API, Docker, GitHub Actions tests.
+* **[Proof-of-Stake ledger simulation](https://github.com/KhoaLeQuangMinh/Proof_of_Stake)** *(Jun 2026, Java)*: Algorand-style multi-node consensus simulation; groundwork for a team charity-ledger project (private repo).
+* **[Traffic simulator](https://github.com/KiwisCodes/traffic-simulator)** *(Nov &ndash; Dec 2025, Java team project)*: JavaFX + SUMO/TraaS. I built the first multithreaded prototype ([Java_OOP](https://github.com/KhoaLeQuangMinh/Java_OOP)): simulation/map managers, traffic lights.
+* **[DRIAMS AMR prediction](https://github.com/KhoaLeQuangMinh/DIRIAMS)** *(Oct 2026)*: extended an open-source 1D-CNN for antibiotic-resistance prediction from MALDI-TOF spectra to support binned data and faster loading.
+* **[Stock forecasting](https://github.com/KhoaLeQuangMinh/CONQ047)** *(AIO module project)*: two NLinear models on log-returns.
+* **[DVC training pipeline](https://github.com/KhoaLeQuangMinh/AI_implementation)** *(Oct 2025)*: data and model versioning practice.
+* **[TrackMeRun](https://github.com/hunggiadao/track-me-run-fitness)** *(2024, first-year team project)*: Flask + Arduino Cloud fitness tracker; I built profile, session and goal features.
+
+---
+
+### Tools
+
+* **Medical imaging & CV:** PyTorch, Mask2Former, UNet++, 3D ResNet, NiBabel, FreeSurfer, ANTs, Gaussian Splatting
+* **LLM / retrieval:** LightRAG, Qwen2.5, Gemini API, PySpark MLlib
+* **Engineering:** Python, Java (JavaFX), R, C/C++, Git, Docker, DVC, GitHub Actions, Flask, LaTeX, Kaggle
